@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-    color: forestgreen; 
+    color: rgb(38, 139, 34); 
     text-align: center;
     
     /* Add Box Model Spacing here */
@@ -12,4 +12,24 @@ h1 {
     padding: 20px;              /* Creates 20 pixels of cushion INSIDE the header box */
     border: 2px solid green;    /* Draws a solid green frame around the header box */
     margin: 30px;               /* Pushes the header box 30 pixels away from the page edges */
+}
+ul {
+    display: flex;          /* Instantly turns the list into a flexible row alignment */
+    list-style-type: none;  /* Removes the default bullet points */
+    padding: 0;             /* Clears out the default inner list padding */
+    justify-content: center; /* Centers your list items directly in the middle of the screen */
+}
+
+/* This targets the individual <li> boxes inside the list */
+li {
+    background-color: forestgreen; /* Gives each item a distinct block background */
+    margin: 10px;                  /* Pushes neighboring items away from each other */
+    padding: 12px 20px;            /* Adds top/bottom and left/right cushion inside the button */
+    border-radius: 5px;            /* Gently rounds the corners of the box */
+}
+
+/* This makes the link text inside our new buttons clean and white */
+li a {
+    color: white;
+    text-align: center;
 }
