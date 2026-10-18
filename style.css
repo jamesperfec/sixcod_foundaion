@@ -1,0 +1,25 @@
+/* This targets your body section and changes the background and font */
+body {
+    background-color: #f4f9f4; /* A soft, warm off-white color */
+    font-family: Arial, sans-serif; /* Clean, modern lettering */
+}
+
+/* This makes your main heading unique */
+h1 {
+    color: forestgreen; /* Changes text color to green */
+    text-align: center; /* Centers your text on the screen */
+}
+body {
+    background-color: #f4f9f4; 
+    font-family: Arial, sans-serif; 
+}
+
+h1 {
+    color: forestgreen; 
+    text-align: center; 
+}
+
+/* Add this new conflicting rule at the very bottom */
+h1 {
+    color: red;
+}
