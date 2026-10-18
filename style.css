@@ -1,35 +1,65 @@
+/* Base Page Settings */
 body {
     background-color: #f4f9f4; 
-    font-family: Arial, sans-serif; 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. Navigation Bar Layout (Using Flexbox for Left/Right Spacing) */
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #1b4332; /* Deep luxury green */
+    padding: 15px 30px;
+    border-bottom: 3px solid forestgreen;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* 2. Main Center Content Box Layout (The Box Model in Practice) */
+.main-container {
+    background-color: white;
+    max-width: 800px;
+    margin: 40px auto; /* Centers the whole container box on the screen */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Adds a soft professional shadow */
+    text-align: center;
 }
 
 h1 {
-    color: rgb(38, 139, 34); 
-    text-align: center;
-    
-    /* Add Box Model Spacing here */
-    background-color: white;    /* Gives your header box a white background */
-    padding: 20px;              /* Creates 20 pixels of cushion INSIDE the header box */
-    border: 2px solid green;    /* Draws a solid green frame around the header box */
-    margin: 30px;               /* Pushes the header box 30 pixels away from the page edges */
-}
-ul {
-    display: flex;          /* Instantly turns the list into a flexible row alignment */
-    list-style-type: none;  /* Removes the default bullet points */
-    padding: 0;             /* Clears out the default inner list padding */
-    justify-content: center; /* Centers your list items directly in the middle of the screen */
+    color: #1b4332;
+    margin-top: 0;
 }
 
-/* This targets the individual <li> boxes inside the list */
-li {
-    background-color: forestgreen; /* Gives each item a distinct block background */
-    margin: 10px;                  /* Pushes neighboring items away from each other */
-    padding: 12px 20px;            /* Adds top/bottom and left/right cushion inside the button */
-    border-radius: 5px;            /* Gently rounds the corners of the box */
+.subtitle {
+    color: #555;
+    margin-bottom: 30px;
 }
 
-/* This makes the link text inside our new buttons clean and white */
-li a {
+/* 3. Recipe Row Layout (Flexbox Main Axis Row Distribution) */
+.recipe-row {
+    display: flex;          
+    list-style-type: none;  
+    padding: 0;             
+    justify-content: space-around; 
+}
+
+.recipe-row li {
+    background-color: forestgreen; 
+    transition: transform 0.2s; /* Smooth motion styling */
+    border-radius: 8px;            
+}
+
+.recipe-row li a {
+    display: block;
     color: white;
-    text-align: center;
+    text-decoration: none; /* Removes the basic underline */
+    padding: 15px 25px;
+    font-weight: 600;
 }
