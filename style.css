@@ -1,14 +1,3 @@
-/* This targets your body section and changes the background and font */
-body {
-    background-color: #f4f9f4; /* A soft, warm off-white color */
-    font-family: Arial, sans-serif; /* Clean, modern lettering */
-}
-
-/* This makes your main heading unique */
-h1 {
-    color: forestgreen; /* Changes text color to green */
-    text-align: center; /* Centers your text on the screen */
-}
 body {
     background-color: #f4f9f4; 
     font-family: Arial, sans-serif; 
@@ -16,10 +5,11 @@ body {
 
 h1 {
     color: forestgreen; 
-    text-align: center; 
-}
-
-/* Add this new conflicting rule at the very bottom */
-h1 {
-    color: red;
+    text-align: center;
+    
+    /* Add Box Model Spacing here */
+    background-color: white;    /* Gives your header box a white background */
+    padding: 20px;              /* Creates 20 pixels of cushion INSIDE the header box */
+    border: 2px solid green;    /* Draws a solid green frame around the header box */
+    margin: 30px;               /* Pushes the header box 30 pixels away from the page edges */
 }
